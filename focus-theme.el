@@ -64,6 +64,7 @@
    `(compilation-mode-line-exit ((t (:foreground, white))))
    `(compilation-info ((t (:foreground, white))))
    `(compilation-error ((t (:foreground, white))))
+   `(compilation-mode-line-fail ((t (:foreground, white)))) 
 
    ;; Mode-line styling
    `(mode-line ((t (:foreground, white :background, dark-blue :box (:color, blue)))))
@@ -73,8 +74,8 @@
    `(fringe ((t (:background, black))))
 
    ;; Line numbers
-   `(line-number ((t (:foreground, dark-grey :background, black))))
-   `(line-number-current-line ((t (:foreground, grey))))
+   `(line-number ((t (:foreground, dark-grey :background, black :inherit default))))
+   `(line-number-current-line ((t (:foreground, grey :inherit default))))
 
    ;; Show paren
    `(show-paren-match ((t (:background, very-dark-grey))))
